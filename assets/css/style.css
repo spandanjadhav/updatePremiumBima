@@ -165,7 +165,29 @@ body {
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
 
+/* Style the dropdown menu to be initially hidden */
+.navbar-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* Adjust background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
 
+/* Show the dropdown menu on hover */
+.navbar-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style individual dropdown items */
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Add a border between items */
+}
+
+/* Remove border from the last dropdown item */
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
 
 
 /*-----------------------------------*\
@@ -266,7 +288,7 @@ body {
 .header {
   --color: var(--white);
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -462,77 +484,46 @@ body {
   #PRODUCT
 \*-----------------------------------*/
 
-.service-list {
-  display: grid;
-  gap: 30px;
-  
+.container.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-
-.service-card {
-  padding: 60px;
-  height: 800px; 
-  box-shadow: var(--shadow);
-  border-radius: var(--radius-12);
-  text-align: center; 
-  grid-template-columns: 1fr 1fr;
+.card {
+  width: calc(33.33% - 20px); /* Adjust card width and margin */
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Adjust card background color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(109, 49, 3, 0.2); /* Add shadow */
 }
 
-
-.service-card li {
-  margin-bottom: 10px; /* Adjust the spacing as needed */
-}
-.service-card li:hover {
-  color: var(--winter-sky_50); /* Adjust the color as needed */
-}
-.service-card .card-icon {
-  background-image: url("../images/service-banner-pattern.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: var(--sea-green);
-  max-width: 165px;
-  display: grid;
-  place-content: center;
-  margin-inline: auto;
-  aspect-ratio: 1 / 1;
-  transition: var(--transition-1);
+.icon {
+  text-align: center; /* Center icon */
 }
 
-.service-card:hover .card-icon { background-color: var(--light-seagreen); }
-
-.service-card .card-icon ion-icon {
-  font-size: 5rem;
-  color: var(--light-seagreen);
-  --ionicon-stroke-width: 20px;
-  transition: var(--transition-1);
+.icon img {
+  width: 60px; /* Adjust icon size */
+  height: 60px; /* Adjust icon size */
 }
 
-.service-card:hover .card-icon ion-icon { color: var(--white); }
-
-.service-card .title {
-  margin-block-end: 15px;
+.text {
+  text-align: center; /* Center text */
+  margin-bottom: 10px;
 }
 
-.service-card .text {
-  text-align: center;
-  margin-block-end: 20px;
+.title {
+  margin-top: 10px;
+  font-size: 18px; /* Adjust title font size */
+  color: #333; /* Adjust title color */
 }
 
-.service-card .card-btn {
-  margin-inline: auto;
-  padding: 15px;
-  border: 1px solid var(--winter-sky);
-  border-radius: 50%;
-  color: var(--winter-sky);
-  transition: var(--transition-1);
+.card .text h3 {
+  font-family: Arial, sans-serif; /* Change the font family */
+  color: var(--gradient-1); /* Change the text color */
+  font-size: 22px;
 }
-
-.service-card .card-btn:is(:hover, :focus) {
-  color: var(--white);
-  background-color: var(--winter-sky);
-}
-
-
 
 
 

@@ -1,0 +1,169 @@
+/*-----------------------------------*\
+  #navbar styling 
+\*-----------------------------------*/
+
+.navbar-link {
+    color: var(--st-patricks-blue);/* Set the color to black */
+  }
+  
+  .logo {
+    color: var(--st-patricks-blue); /* Set the color to black */
+    float: left; /* Align the title to the left */
+    margin-right: 20px; /* Adjust the spacing between the title and the navigation */
+  }
+  
+  /* Optionally, you can change the color of the links on hover */
+  .navbar-link:hover {
+    color: black; /* Darken the color on hover */
+  }
+ 
+/*-----------------------------------*\
+  #box styling 
+\*-----------------------------------*/
+
+  .box-container {
+    width: 90%; /* Set the width of the box container to 70% of the page */
+    margin: 50px auto 60px; /* Center the box container horizontally and add space below the header */
+    padding: 20px; /* Padding of 20px on all sides */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow around the box */
+    border-radius: 20px;
+  }
+  
+  .box {
+    width: 100%;
+    height: 90vh; /* Set the height of the box to 10% of the viewport height */
+    background-color: #fff; /* Background color of the box */
+    display: flex; /* Use flexbox layout */
+  }
+  
+  .health-img {
+    width: auto;
+    height: 100%; /* Ensure the image fills the height of the box */
+    max-width: 40%; /* Set the maximum width of the image to 30% of the box width */
+    object-fit: cover; /* Ensure the image covers the entire box */
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  
+  .box-text-container {
+    display: flex;
+    flex-direction: row; /* Change to column layout */
+    align-items: flex-start; /* Align items to the left */
+    align-items: center; /* Align items to the center vertically */
+    justify-content: space-between; /* Add space between the items */
+    width: 100%;
+  }
+  
+  .box-text {
+    color: var(--st-patricks-blue);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin between the texts */
+  }
+  
+  .box-text i {
+    margin-right: 10px; /* Add space between icon and text */
+  }
+  
+  .box-text:nth-child(1) {
+    margin-right: 60px; /* Add margin between the texts */
+  }
+  .term-heading {
+    font-size: 20px;
+    padding-left: 60px;
+    margin-top: 80px; /* Adjust this value to create space between Premium Bima title and Term Insurance heading */
+  }
+
+  .phone-number {
+    font-size: 15px;
+    margin-left: 5px;
+    color: var(--ocean-blue);
+  }
+
+  .plans{
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 10px;
+    font-family: var(--ff-source-sans-pro);
+  }
+  
+  .get-quotes-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; 
+    height: 50px; 
+    font-size: 20px; 
+    background-color: var(--ocean-blue); 
+    color: white; 
+    border: none;
+    border-radius: 30px; 
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 160px; 
+    padding: 10px 20px; 
+  }
+  
+  .get-quotes-btn:hover {
+    background-color: var(--dark-oceanblue); 
+  }
+  
+  .get-quotes-btn .btn-text {
+    margin-left: 40px; 
+  }
+  
+  .pincode-input {
+    margin-top: 20px; /* Add space above the vehicle input section */
+  }
+  
+  .pincode-label {
+    color: black; /* Set the color of the label to grey */
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .pincode-textbox {
+    width: 100%; /* Set the width of the text box to fill the container */
+    padding: 10px; /* Add padding to the text box */
+    margin-top: 20px; /* Add space between the label and the text box */
+    border: 1px solid #ccc; /* Add a border to the text box */
+    border-radius: 5px; /* Add rounded corners to the text box */
+    margin-left: 10px;
+  }
+  .gender-options {
+    margin-top: 20px;
+  }
+  
+  .gender-options label {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-right: 20px; /* Add some space between the options */
+  }
+  
+  /* Style the radio buttons */
+  .gender-options input[type="radio"] {
+    margin-right: 5px; /* Add some space between the button and text */
+    vertical-align: middle; /* Align the radio button vertically with the text */
+    margin-top: 2px;
+  }
+  .gender-options #male {
+    margin-left: -20px; /* Adjust the left margin as needed */
+   
+  }
+  .content {
+    width: 80%; /* Set the width to 75% of the page */
+    margin: 0 auto; /* Center the content horizontally */
+    padding-left: 0px; /* Add left padding */
+  }
+ p{
+    margin-bottom: 15px;
+ }
